@@ -8,6 +8,8 @@ class Rock{
       World.add(myWorld,this.body);
       this.width = width;
       this.height = height;
+      Matter.Body.setMass(this.body,this.body.mass*5);
+      
     }
     show()
     {
